@@ -1,0 +1,14 @@
+fo = open('f.dat','r')
+
+
+# Open a file
+fo = open("f.dat", "rw+")
+print "Name of the file: ", fo.name
+
+n = len(fo.read())
+for index in range(n):
+   line = fo.next()
+   print "Line No %d - %s" % (index, line)
+
+# Close opend file
+fo.close()
